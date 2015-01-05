@@ -108,7 +108,6 @@ install gnu-tar
 install gnupg
 install gnuplot
 install gnutls
-install go
 install gobject-introspection
 install gradle
 install gtk+
