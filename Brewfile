@@ -90,8 +90,6 @@ install figlet
 install fontconfig --universal
 install fontforge
 install freetype --universal --universal
-install fuse4x
-install fuse4x-kext
 install gd --universal
 install gdbm
 install gdk-pixbuf
