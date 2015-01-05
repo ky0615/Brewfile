@@ -14,7 +14,6 @@ cask install mactex
 cask install osxfuse
 cask install skype
 cask install sublime-text
-cask install thunderbird
 cask install vox
 cask install yorufukurou
 
