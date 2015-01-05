@@ -30,6 +30,7 @@ install osx-cpu-temp
 tap homebrew/dupes
 install apple-gcc42
 install libiconv
+install openldap
 install openssh
 install tidy
 install zlib
@@ -44,6 +45,13 @@ install phplint
 
 ## homebrew/versions
 tap homebrew/versions
+install cloog018
+install gcc48
+install gmp4
+install isl011
+install libmpc08
+install llvm35
+install mpfr2
 
 ## homebrew/x11
 tap homebrew/x11
@@ -90,6 +98,7 @@ install autojump
 install automake
 install bash
 install bdw-gc
+install binutils
 install bison
 install boost
 install boxes
@@ -101,8 +110,10 @@ install cabextract
 install cairo
 install casperjs
 install class-dump
+install cloog
 install cmake
 install colordiff
+install coreutils
 install cscope
 install ctags
 install curl
@@ -121,6 +132,7 @@ install fontforge
 install freetype --universal
 install fuse4x
 install fuse4x-kext
+install gcc
 install gd --universal
 install gdbm
 install gdk-pixbuf
@@ -155,10 +167,12 @@ install imagemagick
 install imap-uw
 install intltool
 install iperf
+install isl
 install jasper --universal
 install jbig2dec
 install jpeg --universal
 install jq
+install jsonpp
 install lame
 install libarchive
 install libbson
@@ -172,7 +186,9 @@ install libgphoto2 --universal
 install libicns --universal
 install libksba
 install libmemcached
+install libmpc
 install libpng --universal
+install libressl
 install libsodium
 install libssh2
 install libtasn1
@@ -202,11 +218,14 @@ install memcached
 install mercurial
 install mhash
 install mongodb
+install mpfr
 install mplayer
 install mysql
+install mysql-connector-c
 install mysql-connector-c++
 install nettle
 install nginx
+install ninja
 install nkf
 install nmap
 install objective-caml
@@ -255,6 +274,8 @@ install wireshark
 install x264
 install xvid
 install xz
+install yajl
+install z
 install zenity
 install zeromq
 install zsh
