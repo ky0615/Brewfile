@@ -120,7 +120,7 @@ install ffmpeg
 install figlet
 install fontconfig --universal
 install fontforge
-install freetype --universal --universal --universal
+install freetype --universal
 install fuse4x
 install fuse4x-kext
 install gd --universal
@@ -170,7 +170,7 @@ install libevent
 install libffi
 install libgcrypt
 install libgpg-error
-install libgphoto2 --universal --universal
+install libgphoto2 --universal
 install libicns --universal
 install libksba
 install libmemcached
