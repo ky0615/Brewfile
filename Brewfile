@@ -13,7 +13,6 @@ cask install kindle-previewer
 cask install mactex
 cask install osxfuse
 cask install skype
-cask install sourcetree
 cask install sublime-text
 cask install thunderbird
 cask install vox
@@ -283,7 +282,6 @@ appstore Pages
 appstore Pocket
 appstore Skitch
 appstore Slack
-appstore SourceTree
 appstore The Unarchiver
 appstore TweetDeck
 appstore VirtualDJ Home
