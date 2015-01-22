@@ -5,6 +5,7 @@
 tap caskroom/cask
 install brew-cask
 cask install alfred
+cask install android-studio
 cask install atom
 cask install haroopad
 cask install intellij-idea
@@ -101,6 +102,7 @@ install bdw-gc
 install binutils
 install bison
 install boost
+install boot2docker
 install boxes
 install bsdiff
 install bsdmake
@@ -182,7 +184,7 @@ install libevent
 install libffi
 install libgcrypt
 install libgpg-error
-install libgphoto2 --universal
+install libgphoto2 --universal --universal
 install libicns --universal
 install libksba
 install libmemcached
@@ -217,6 +219,7 @@ install mecab-ipadic
 install memcached
 install mercurial
 install mhash
+install minicom
 install mongodb
 install mpfr
 install mplayer
@@ -230,7 +233,7 @@ install nkf
 install nmap
 install objective-caml
 install oniguruma
-install openssl --universal
+install openssl --universal --universal --universal
 install openvpn
 install ossp-uuid
 install pandoc
