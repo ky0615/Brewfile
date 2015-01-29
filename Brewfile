@@ -15,8 +15,9 @@ cask install mactex
 cask install osxfuse
 cask install skype
 cask install sublime-text
+cask install unity
+cask install vlc
 cask install vox
-cask install yorufukurou
 
 ## caskroom/versions
 tap caskroom/versions
@@ -184,7 +185,7 @@ install libevent
 install libffi
 install libgcrypt
 install libgpg-error
-install libgphoto2 --universal --universal
+install libgphoto2 --universal
 install libicns --universal
 install libksba
 install libmemcached
@@ -233,7 +234,7 @@ install nkf
 install nmap
 install objective-caml
 install oniguruma
-install openssl --universal --universal --universal
+install openssl --universal --universal
 install openvpn
 install ossp-uuid
 install pandoc
@@ -283,6 +284,11 @@ install zenity
 install zeromq
 install zsh
 install zsh-completions
+
+# Below applications were installed by Cask,
+# but don't not have corresponding casks.
+
+#cask  install yorufukurou (!)
 
 # App Store applications
 appstore Bandwidth+
