@@ -1,318 +1,231 @@
+#!/usr/bin/env bash
+
+#BREWFILE_IGNORE
+if ! which brew >& /dev/null;then
+  brew_installed=0
+  echo Homebrew is not installed!
+  echo Install now...
+  echo /bin/bash -c \"\$\(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh\)\"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  echo
+fi
+#BREWFILE_ENDIGNORE
 
 # tap repositories and their packages
 
-## caskroom/cask
-tap caskroom/cask
-install brew-cask
-cask install alfred
-cask install android-studio
-cask install atom
-cask install haroopad
-cask install intellij-idea
-cask install iterm2
-cask install kindle-previewer
-cask install mactex
-cask install osxfuse
-cask install skype
-cask install sublime-text
-cask install unity
-cask install vlc
-cask install vox
+brew tap homebrew/core
+brew install aom
+brew install arp-scan
+brew install autoconf
+brew install automake
+brew install awscli
+brew install bdw-gc
+brew install bison@2.7
+brew install boost
+brew install cairo
+brew install clang-format
+brew install cmake
+brew install cocoapods
+brew install curl
+brew install dateutils
+brew install dcraw
+brew install direnv
+brew install eigen
+brew install ffmpeg
+brew install flac
+brew install flann
+brew install fontconfig
+brew install freetype
+brew install frei0r
+brew install fribidi
+brew install gcc
+brew install gd
+brew install gdbm
+brew install gettext
+brew install giflib
+brew install git
+brew install git-flow
+brew install git-lfs
+brew install glfw
+brew install glib
+brew install gmp
+brew install gnutls
+brew install gpac
+brew install gradle
+brew install graphite2
+brew install graphviz
+brew install gts
+brew install harfbuzz
+brew install hdf5
+brew install hidapi
+brew install icu4c
+brew install ilmbase
+brew install imagemagick
+brew install iperf
+brew install iproute2mac
+brew install isl
+brew install jasper
+brew install jpeg
+brew install jq
+brew install kafka
+brew install lame
+brew install ldns
+brew install leptonica
+brew install libarchive
+brew install libass
+brew install libbluray
+brew install libcbor
+brew install libde265
+brew install libevent
+brew install libffi
+brew install libfido2
+brew install libftdi
+brew install libheif
+brew install libidn2
+brew install libmpc
+brew install libogg
+brew install libomp
+brew install libpcap
+brew install libpng
+brew install libsamplerate
+brew install libsndfile
+brew install libsoxr
+brew install libtasn1
+brew install libtiff
+brew install libtool
+brew install libunistring
+brew install libusb
+brew install libusb-compat
+brew install libvidstab
+brew install libvorbis
+brew install libvpx
+brew install libxml2
+brew install libyaml
+brew install libzip
+brew install liquibase
+brew install little-cms2
+brew install lua
+brew install lua@5.1
+brew install lz4
+brew install lzo
+brew install mackup
+brew install mas
+brew install mcrypt
+brew install mercurial
+brew install mhash
+brew install mpfr
+brew install mpv
+brew install mujs
+brew install mysql@5.7
+brew install ncurses
+brew install neofetch
+brew install netpbm
+brew install nettle
+brew install nmap
+brew install node
+brew install oniguruma
+brew install open-ocd
+brew install opencore-amr
+brew install openexr
+brew install openjdk
+brew install openjpeg
+brew install openssh
+brew install openssl@1.1
+brew install openvpn
+brew install opus
+brew install p11-kit
+brew install pcre
+brew install pcre2
+brew install perl
+brew install pipenv
+brew install pixman
+brew install pkcs11-helper
+brew install pkg-config
+brew install plantuml
+brew install python
+brew install python@3.8
+brew install re2c
+brew install readline
+brew install rtmpdump
+brew install rubberband
+brew install ruby
+brew install screenfetch
+brew install screenresolution
+brew install sdl2
+brew install shared-mime-info
+brew install smartmontools
+brew install snappy
+brew install socat
+brew install speedtest-cli
+brew install speex
+brew install sqlite
+brew install szip
+brew install tesseract
+brew install tfenv
+brew install theora
+brew install tmux
+brew install tree
+brew install uchardet
+brew install ufraw
+brew install unbound
+brew install utf8proc
+brew install vapoursynth
+brew install vim
+brew install w3m
+brew install watch
+brew install webp
+brew install wget
+brew install x264
+brew install x265
+brew install xvid
+brew install xz
+brew install yarn
+brew install youtube-dl
+brew install zbar
+brew install zimg
+brew install zookeeper
+brew install zsh
 
-## caskroom/versions
-tap caskroom/versions
-cask install java7
-cask install thunderbird-ja
+brew tap homebrew/cask-versions
+brew cask install adoptopenjdk8
 
-## geta6/utility
-tap geta6/utility
-install osx-cpu-temp
+brew tap homebrew/services
 
-## homebrew/dupes
-tap homebrew/dupes
-install apple-gcc42
-install libiconv
-install openldap
-install openssh
-install tidy
-install zlib
+brew tap homebrew/cask
+brew cask install tuntap
 
-## homebrew/headonly
-tap homebrew/headonly
-install otx --HEAD
+brew tap argon/mas
 
-## homebrew/php
-tap homebrew/php
-install phplint
+brew tap mongodb/brew
+brew install mongodb-community
 
-## homebrew/versions
-tap homebrew/versions
-install cloog018
-install gcc48
-install gmp4
-install isl011
-install libmpc08
-install llvm35
-install mpfr2
+brew tap px4/px4
+brew install gcc-arm-none-eabi
 
-## homebrew/x11
-tap homebrew/x11
-install swi-prolog
-
-## josegonzalez/php
-tap josegonzalez/php
-
-## ky0615/cask
-tap ky0615/cask
-cask install sourcetree181
-
-## mcuadros/hhvm
-tap mcuadros/hhvm
-install binutilsfb
-install jemallocfb
-install libdwarf
-
-## motemen/mackerel-agent
-tap motemen/mackerel-agent
-install mackerel-agent --HEAD
-
-## peco/peco
-tap peco/peco
-install peco
-
-## phinze/cask
-tap phinze/cask
-
-## rcmdnk/file
-tap rcmdnk/file
-install brew-file
+brew tap rcmdnk/file
+brew install brew-file
 
 # Other Homebrew packages
-install a2ps
-install afio
-install android-platform-tools
-install ansible
-install apktool
-install aspell
-install atk
-install autoconf
-install autojump
-install automake
-install bash
-install bdw-gc
-install binutils
-install bison
-install boost
-install boot2docker
-install boxes
-install bsdiff
-install bsdmake
-install c-ares
-install cabal-install
-install cabextract
-install cairo
-install casperjs
-install class-dump
-install cloog
-install cmake
-install colordiff
-install coreutils
-install cscope
-install ctags
-install curl
-install czmq
-install d-bus
-install direnv
-install docbook
-install docker
-install enchant
-install ext4fuse
-install faac
-install ffmpeg
-install figlet
-install fontconfig --universal
-install fontforge
-install freetype --universal
-install fuse4x
-install fuse4x-kext
-install gcc
-install gd --universal
-install gdbm
-install gdk-pixbuf
-install geoip
-install gettext
-install gflags
-install ghc
-install ghostscript
-install gist
-install git
-install git-flow
-install glib
-install glog
-install gmp
-install gnome-doc-utils
-install gnu-sed
-install gnu-tar
-install gnupg
-install gnuplot
-install gnutls
-install gobject-introspection
-install gradle
-install gtk+
-install gtk-engines
-install guile
-install harfbuzz
-install heroku-toolbelt
-install htop-osx
-install hub
-install icu4c
-install imagemagick
-install imap-uw
-install intltool
-install iperf
-install isl
-install jasper --universal
-install jbig2dec
-install jpeg --universal
-install jq
-install jsonpp
-install lame
-install libarchive
-install libbson
-install libcaca
-install libelf
-install libevent
-install libffi
-install libgcrypt
-install libgpg-error
-install libgphoto2 --universal
-install libicns --universal
-install libksba
-install libmemcached
-install libmpc
-install libpng --universal
-install libressl
-install libsodium
-install libssh2
-install libtasn1
-install libtiff --universal
-install libtool --universal
-install libunistring
-install libusb --universal
-install libusb-compat --universal
-install libvo-aacenc
-install libvpx
-install libxml2 --with-python
-install libxslt
-install libyaml
-install libzip
-install little-cms2 --universal
-install lua
-install luarocks
-install lz4
-install lzo
-install macvim
-install makedepend
-install mcrypt
-install md5sha1sum
-install mecab
-install mecab-ipadic
-install memcached
-install mercurial
-install mhash
-install minicom
-install mongodb
-install mpfr
-install mplayer
-install mysql
-install mysql-connector-c
-install mysql-connector-c++
-install nettle
-install nginx
-install ninja
-install nkf
-install nmap
-install objective-caml
-install oniguruma
-install openssl --universal --universal
-install openvpn
-install ossp-uuid
-install pandoc
-install pango
-install pcre
-install phantomjs
-install picocom
-install pixman
-install pkg-config
-install postgresql
-install pwgen
-install pyenv
-install python
-install qt
-install re2c
-install readline
-install reattach-to-user-namespace
-install redis
-install s3cmd
-install s3fs
-install sane-backends --universal
-install scrollkeeper
-install sl
-install sqlite
-install subversion
-install t1lib
-install t1utils
-install tbb
-install the_silver_searcher
-install thrift
-install tig
-install tmux
-install toilet
-install tree
-install tuntap
-install unixodbc
-install vim
-install w3m
-install wget
-install wireshark
-install x264
-install xvid
-install xz
-install yajl
-install z
-install zenity
-install zeromq
-install zsh
-install zsh-completions
-
-# Below applications were installed by Cask,
-# but don't not have corresponding casks.
-
-#cask  install yorufukurou (!)
+brew install python@2
 
 # App Store applications
-appstore Bandwidth+
-appstore Battery Health
-appstore Blackmagic Disk Speed Test
-appstore Caffeine
-appstore Coffitivity
-appstore DUMBO
-appstore Evernote
-appstore File Viewer
-appstore Janetter
-appstore Keynote
-appstore Launcher
-appstore LINE
-appstore Memory Diag
-appstore MIDIWind_Player
-appstore Mixxx
-appstore Numbers
-appstore Pages
-appstore Pocket
-appstore Skitch
-appstore Slack
-appstore The Unarchiver
-appstore TweetDeck
-appstore VirtualDJ Home
-appstore Wunderlist
-appstore Xcode
+mas install 490461369 Bandwidth+ (1.17)
+mas install 549083868 Display Menu (2.2.3)
+mas install 975937182 Fantastical (3.0.5)
+mas install 682658836 GarageBand (10.3.3)
+mas install 1026566364 GoodNotes (1.1.25)
+mas install 409183694 Keynote (9.2.1)
+mas install 405399194 Kindle (1.26.1)
+mas install 411213048 LadioCast (000013000)
+mas install 539883307 LINE (5.21.3)
+mas install 1160374471 PiPifier (1.2.4)
+mas install 803453959 Slack (4.3.3)
+mas install 1176895641 Spark (2.3.14)
+mas install 903733783 Tagr (4.11.0)
+mas install 1450308734 Tagr (5.2.0)
+mas install 425424353 The Unarchiver (4.1.0)
+mas install 1278508951 Trello (2.11.3)
+mas install 417934534 VirtualDJ Home (7.0.5)
+mas install 461369673 VOX (3.3.17)
+mas install 836500024 WeChat (2.3.29)
+mas install 497799835 Xcode (11.0)
